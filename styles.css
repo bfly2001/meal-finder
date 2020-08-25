@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   background: #2d2013;
+   color: #fff;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin: 0;;
+}
