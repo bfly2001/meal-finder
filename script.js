@@ -4,3 +4,6 @@ random = document.getElementById('random'),
 mealsEl = document.getElementById('meals'),
 resultHeading = document.getElementById('result-heading'),
 single_mealEl = document.getElementById('single-meal')
+
+//Event Listeners
+submit.addEventListener('submit', searchMeal);
