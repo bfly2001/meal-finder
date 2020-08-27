@@ -17,6 +17,11 @@ const term = search.value;
 
 //Check for empty
 if (term.trim()) {
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
+    .then(res => res.json())
+    .then(dat => {
+        console.log(object);
+    }) 
     } else {
         alert('Please enter a search term');
   }
