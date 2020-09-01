@@ -56,6 +56,21 @@ function getMealById(mealID) {
     });
 }
 
+// Fetch random meal 
+function getRandomMeal() {
+    //clear meals and heading
+    mealsEl.innerHTML = "";
+    resultHeading.innerHTML = "";
+
+    fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
+        .then(res => res.json())
+        .then(data => {
+            const meal = data.meals[0];
+
+            addMealToDOM();
+        });
+}
+
 // Add meal to DOM
 function addMealToDOM(meal) {
     const ingredients = [];
