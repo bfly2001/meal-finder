@@ -67,7 +67,7 @@ function getRandomMeal() {
         .then(data => {
             const meal = data.meals[0];
 
-            addMealToDOM();
+            addMealToDOM(meal);
         });
 }
 
