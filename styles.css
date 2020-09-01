@@ -104,7 +104,18 @@ input[type='text'] {
     border-radius: 2px;
 }
 
+.single-meal-info {
+    margin: 20px;
+    padding: 10px;
+    border: 2px #e09850 dashed;
+    border-radius: 5px;
+}
 
+.single-meal p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
 
 @media(max-width: 800px) {}
 @media(max-width: 700px) {}
